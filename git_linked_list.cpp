@@ -18,6 +18,13 @@ void created_at_tail(node *&tail, int d)
     tail->next = temp;
     tail = temp;
 }
+void created_at_head(node *&head, int d)
+{
+    node *temp = new node(d);
+    temp->next = head;
+    head = temp;
+}
+
 void display(node *&head)
 {
     node *temp = head;
