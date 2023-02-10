@@ -11,6 +11,12 @@ class node
     }
 };
 
+void created_at_tail(node *&tail, int d)
+{
+    node *temp = new node(d);
+    tail->next = temp;
+    tail = temp;
+}
 int main()
 {
     node *node1 = new node(1);
